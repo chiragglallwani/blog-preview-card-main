@@ -1,0 +1,126 @@
+@font-face {
+  font-family: "FigtreeItalic";
+  src: url("./assets/fonts/Figtree-Italic-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "Figtree";
+  src: url("./assets/fonts/Figtree-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "FigtreeExtraBold";
+  src: url("./assets/fonts/static/Figtree-ExtraBold.ttf");
+}
+
+@font-face {
+  font-family: "FigtreeSemiBold";
+  src: url("./assets/fonts/static/Figtree-SemiBold.ttf");
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(47, 88%, 63%);
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+.card {
+  margin-top: 7px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  max-width: 92%;
+  height: 80%;
+  border-width: 1px;
+  border-style: solid;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 25px;
+  border-color: hsl(0, 0%, 7%);
+  box-shadow: 8px 8px;
+  padding: 20px;
+}
+
+.card-header {
+  width: auto;
+  height: 203px;
+  border-radius: 15px;
+}
+
+.card-header-img {
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-body-tag {
+  margin: 25px 0 0px 0;
+  background-color: hsl(47, 88%, 63%);
+  border-radius: 5px;
+  width: fit-content;
+  font-size: 13px;
+  padding: 7px 10px 7px 10px;
+  font-weight: bolder;
+  font-family: "FigtreeExtraBold", Arial, sans-serif;
+}
+
+.card-publish-date {
+  margin-top: 13px;
+  font-size: 13px;
+  font-weight: 400;
+  font-family: "Figtree", Arial, sans-serif;
+}
+
+.card-body-headline {
+  margin: 0;
+  font-family: "FigtreeExtraBold", Arial, sans-serif;
+  font-size: 22px;
+}
+
+.card-text {
+  font-family: "Figtree", Arial, sans-serif;
+  color: hsl(0, 0%, 50%);
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.card-footer {
+  display: flex;
+  justify-self: start;
+  align-items: center;
+}
+
+.footer-img {
+  width: auto;
+  height: 30px;
+  margin-right: 15px;
+}
+
+.card-name {
+  font-family: "FigtreeExtraBold", Arial, sans-serif;
+}
+
+footer {
+  position: fixed;
+  bottom: 5px;
+}
+
+@media only screen and (min-width: 376px) {
+  body {
+    display: flex;
+    height: 90vh;
+    justify-content: center;
+  }
+  .card {
+    height: fit-content;
+    max-width: 18%;
+  }
+}
