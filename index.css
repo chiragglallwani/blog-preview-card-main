@@ -121,6 +121,6 @@ footer {
   }
   .card {
     height: fit-content;
-    max-width: 18%;
+    max-width: 350px;
   }
 }
